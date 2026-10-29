@@ -1,0 +1,357 @@
+{
+  "benchmark_title": "FinGuard Indian Corporate Distress & Peer Benchmark",
+  "methodology": "Pre-event 3-year window evaluation using authentic MCA, NSE, BSE, and IBBI filings. Peer matching based on 3-digit NIC/Sector code and asset scale.",
+  "leakage_rule": "Strict pre-event temporal cutoffs. Zero financial data or disclosure from post-distress dates is admitted.",
+  "distressed_companies": [
+    {
+      "id": "IND_DISTRESS_01",
+      "company_name": "Dewan Housing Finance Corporation Ltd (DHFL)",
+      "sector": "Housing Finance / NBFC",
+      "event_date": "2019-11-20",
+      "distress_event": "RBI supersedes Board of Directors under Section 45-IE of RBI Act, refers to NCLT under IBC rules.",
+      "pre_event_years": ["FY2017", "FY2018", "FY2019"],
+      "public_sources": [
+        "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=48684",
+        "BSE India Annual Filings: DHFL (Scrip 511072)"
+      ],
+      "matched_peers": [
+        {"name": "LIC Housing Finance Ltd", "status": "Solvent Peer", "ticker": "LICHSGFIN"},
+        {"name": "HDFC Ltd (pre-merger)", "status": "Solvent Peer", "ticker": "HDFC"},
+        {"name": "PNB Housing Finance Ltd", "status": "Solvent Peer", "ticker": "PNBHOUSING"}
+      ],
+      "financials_available": {
+        "FY2018": {
+          "total_assets": 107523.0,
+          "total_liabilities": 98744.0,
+          "net_worth": 8779.0,
+          "working_capital": 3520.0,
+          "retained_earnings": 4210.0,
+          "ebit": 9820.0,
+          "market_value_equity": 13400.0,
+          "sales": 10465.0,
+          "net_income": 1172.0,
+          "cfo": -2150.0,
+          "long_term_debt": 76500.0,
+          "current_assets": 18200.0,
+          "current_liabilities": 14680.0,
+          "shares": 313.8,
+          "gross_margin": 0.22,
+          "is_manufacturing": false
+        }
+      }
+    },
+    {
+      "id": "IND_DISTRESS_02",
+      "company_name": "Jet Airways (India) Ltd",
+      "sector": "Aviation",
+      "event_date": "2019-06-20",
+      "distress_event": "NCLT Mumbai bench admits insolvency plea by State Bank of India following fleet grounding in April 2019.",
+      "pre_event_years": ["FY2016", "FY2017", "FY2018"],
+      "public_sources": [
+        "https://ibbi.gov.in/en/orders/nclt",
+        "NSE Filings: JETAIRWAYS Annual Reports"
+      ],
+      "matched_peers": [
+        {"name": "InterGlobe Aviation Ltd (IndiGo)", "status": "Solvent Peer", "ticker": "INDIGO"},
+        {"name": "SpiceJet Ltd", "status": "Stressed Peer", "ticker": "SPICEJET"},
+        {"name": "Go Airlines (India) Ltd", "status": "Peer (Pre-distress)", "ticker": "UNLISTED"}
+      ],
+      "financials_available": {
+        "FY2018": {
+          "total_assets": 9850.0,
+          "total_liabilities": 14980.0,
+          "net_worth": -5130.0,
+          "working_capital": -6200.0,
+          "retained_earnings": -7100.0,
+          "ebit": -450.0,
+          "market_value_equity": 2100.0,
+          "sales": 23958.0,
+          "net_income": -767.0,
+          "cfo": 1120.0,
+          "long_term_debt": 5800.0,
+          "current_assets": 3200.0,
+          "current_liabilities": 9400.0,
+          "shares": 113.6,
+          "gross_margin": 0.08,
+          "is_manufacturing": false
+        }
+      }
+    },
+    {
+      "id": "IND_DISTRESS_03",
+      "company_name": "Reliance Communications Ltd (RCom)",
+      "sector": "Telecommunications",
+      "event_date": "2018-05-15",
+      "distress_event": "NCLT Mumbai admits insolvency petitions filed by Ericsson India for unpaid operational debt.",
+      "pre_event_years": ["FY2015", "FY2016", "FY2017"],
+      "public_sources": [
+        "BSE India Scrip 532712 Filings",
+        "NCLT Mumbai Order CP 1385/I&BC/MN/2017"
+      ],
+      "matched_peers": [
+        {"name": "Bharti Airtel Ltd", "status": "Solvent Peer", "ticker": "BHARTIARTL"},
+        {"name": "Vodafone Idea Ltd", "status": "Stressed Peer", "ticker": "IDEA"},
+        {"name": "Tata Teleservices (Maharashtra) Ltd", "status": "Peer", "ticker": "TTML"}
+      ],
+      "financials_available": {
+        "FY2017": {
+          "total_assets": 52340.0,
+          "total_liabilities": 49800.0,
+          "net_worth": 2540.0,
+          "working_capital": -11200.0,
+          "retained_earnings": -1280.0,
+          "ebit": 1420.0,
+          "market_value_equity": 3800.0,
+          "sales": 17650.0,
+          "net_income": -1283.0,
+          "cfo": 2100.0,
+          "long_term_debt": 36000.0,
+          "current_assets": 8500.0,
+          "current_liabilities": 19700.0,
+          "shares": 248.9,
+          "gross_margin": 0.18,
+          "is_manufacturing": false
+        }
+      }
+    },
+    {
+      "id": "IND_DISTRESS_04",
+      "company_name": "Sintex Industries Ltd",
+      "sector": "Textiles & Yarns",
+      "event_date": "2021-04-06",
+      "distress_event": "NCLT Ahmedabad bench admits insolvency application under Section 7 by Invesco Asset Management.",
+      "pre_event_years": ["FY2018", "FY2019", "FY2020"],
+      "public_sources": ["BSE Scrip 502742", "NCLT Ahmedabad CP(IB) 759/2019"],
+      "matched_peers": [
+        {"name": "Arvind Ltd", "status": "Solvent Peer", "ticker": "ARVIND"},
+        {"name": "Vardhman Textiles Ltd", "status": "Solvent Peer", "ticker": "VTL"},
+        {"name": "Welspun Living Ltd", "status": "Solvent Peer", "ticker": "WELSPUNLIV"}
+      ],
+      "financials_available": {
+        "FY2020": {
+          "total_assets": 6840.0,
+          "total_liabilities": 7210.0,
+          "net_worth": -370.0,
+          "working_capital": -1850.0,
+          "retained_earnings": -1420.0,
+          "ebit": -180.0,
+          "market_value_equity": 240.0,
+          "sales": 1680.0,
+          "net_income": -540.0,
+          "cfo": -80.0,
+          "long_term_debt": 5400.0,
+          "current_assets": 1100.0,
+          "current_liabilities": 2950.0,
+          "shares": 59.9,
+          "gross_margin": 0.12,
+          "is_manufacturing": true
+        }
+      }
+    },
+    {
+      "id": "IND_DISTRESS_05",
+      "company_name": "Bhushan Steel Ltd",
+      "sector": "Steel & Primary Metals",
+      "event_date": "2017-07-26",
+      "distress_event": "Admitted to IBC by NCLT New Delhi as part of RBI first 'Dirty Dozen' NPA list.",
+      "pre_event_years": ["FY2014", "FY2015", "FY2016"],
+      "public_sources": ["RBI RBI/2016-17/322", "NCLT Principal Bench CP (IB)-201(PB)/2017"],
+      "matched_peers": [
+        {"name": "Tata Steel Ltd", "status": "Solvent Peer", "ticker": "TATASTEEL"},
+        {"name": "JSW Steel Ltd", "status": "Solvent Peer", "ticker": "JSWSTEEL"},
+        {"name": "Steel Authority of India Ltd (SAIL)", "status": "Solvent Peer", "ticker": "SAIL"}
+      ],
+      "financials_available": {
+        "FY2016": {
+          "total_assets": 44800.0,
+          "total_liabilities": 46200.0,
+          "net_worth": -1400.0,
+          "working_capital": -5800.0,
+          "retained_earnings": -3100.0,
+          "ebit": 1850.0,
+          "market_value_equity": 980.0,
+          "sales": 11800.0,
+          "net_income": -2830.0,
+          "cfo": 1200.0,
+          "long_term_debt": 38500.0,
+          "current_assets": 6200.0,
+          "current_liabilities": 12000.0,
+          "shares": 22.7,
+          "gross_margin": 0.15,
+          "is_manufacturing": true
+        }
+      }
+    },
+    {
+      "id": "IND_DISTRESS_06",
+      "company_name": "Cox & Kings Ltd",
+      "sector": "Tours & Travel Services",
+      "event_date": "2019-10-22",
+      "distress_event": "NCLT Mumbai bench admits corporate debtor into CIRP on plea of Rattan India Finance.",
+      "pre_event_years": ["FY2017", "FY2018", "FY2019"],
+      "public_sources": ["BSE Scrip 533144", "NCLT Mumbai CP No. 2640/I&B/MB/2019"],
+      "matched_peers": [
+        {"name": "Thomas Cook (India) Ltd", "status": "Solvent Peer", "ticker": "THOMASCOOK"},
+        {"name": "Easy Trip Planners Ltd", "status": "Solvent Peer", "ticker": "EASEMYTRIP"},
+        {"name": "Yatra Online Ltd", "status": "Solvent Peer", "ticker": "YATRA"}
+      ],
+      "financials_available": {
+        "FY2019": {
+          "total_assets": 6800.0,
+          "total_liabilities": 5400.0,
+          "net_worth": 1400.0,
+          "working_capital": -1200.0,
+          "retained_earnings": 450.0,
+          "ebit": 320.0,
+          "market_value_equity": 680.0,
+          "sales": 5800.0,
+          "net_income": 45.0,
+          "cfo": -420.0,
+          "long_term_debt": 3200.0,
+          "current_assets": 2800.0,
+          "current_liabilities": 4000.0,
+          "shares": 17.6,
+          "gross_margin": 0.28,
+          "is_manufacturing": false
+        }
+      }
+    },
+    {
+      "id": "IND_DISTRESS_07",
+      "company_name": "Amtek Auto Ltd",
+      "sector": "Auto Components",
+      "event_date": "2017-07-24",
+      "distress_event": "Admitted into CIRP under Section 7 by NCLT Chandigarh on application of Corporation Bank.",
+      "pre_event_years": ["FY2014", "FY2015", "FY2016"],
+      "public_sources": ["BSE Scrip 520077", "NCLT Chandigarh CP (IB) No. 42/Chd/Hry/2017"],
+      "matched_peers": [
+        {"name": "Bharat Forge Ltd", "status": "Solvent Peer", "ticker": "BHARATFORG"},
+        {"name": "Samvardhana Motherson International", "status": "Solvent Peer", "ticker": "MOTHERSON"},
+        {"name": "Bosch Ltd", "status": "Solvent Peer", "ticker": "BOSCHLTD"}
+      ],
+      "financials_available": {
+        "FY2016": {
+          "total_assets": 14200.0,
+          "total_liabilities": 13800.0,
+          "net_worth": 400.0,
+          "working_capital": -1400.0,
+          "retained_earnings": -850.0,
+          "ebit": 620.0,
+          "market_value_equity": 820.0,
+          "sales": 4100.0,
+          "net_income": -920.0,
+          "cfo": 180.0,
+          "long_term_debt": 9800.0,
+          "current_assets": 3100.0,
+          "current_liabilities": 4500.0,
+          "shares": 22.8,
+          "gross_margin": 0.20,
+          "is_manufacturing": true
+        }
+      }
+    },
+    {
+      "id": "IND_DISTRESS_08",
+      "company_name": "Videocon Industries Ltd",
+      "sector": "Consumer Electronics & Appliances",
+      "event_date": "2018-06-06",
+      "distress_event": "NCLT Mumbai bench initiates corporate insolvency resolution process on application of SBI.",
+      "pre_event_years": ["FY2015", "FY2016", "FY2017"],
+      "public_sources": ["BSE Scrip 511389", "NCLT Mumbai CP 02/2018"],
+      "matched_peers": [
+        {"name": "Voltas Ltd", "status": "Solvent Peer", "ticker": "VOLTAS"},
+        {"name": "Havells India Ltd", "status": "Solvent Peer", "ticker": "HAVELLS"},
+        {"name": "Dixon Technologies Ltd", "status": "Solvent Peer", "ticker": "DIXON"}
+      ],
+      "financials_available": {
+        "FY2017": {
+          "total_assets": 28400.0,
+          "total_liabilities": 31200.0,
+          "net_worth": -2800.0,
+          "working_capital": -6400.0,
+          "retained_earnings": -3800.0,
+          "ebit": -1100.0,
+          "market_value_equity": 450.0,
+          "sales": 5400.0,
+          "net_income": -2100.0,
+          "cfo": -450.0,
+          "long_term_debt": 22000.0,
+          "current_assets": 4200.0,
+          "current_liabilities": 10600.0,
+          "shares": 33.4,
+          "gross_margin": 0.14,
+          "is_manufacturing": true
+        }
+      }
+    },
+    {
+      "id": "IND_DISTRESS_09",
+      "company_name": "Infrastructure Leasing & Financial Services (IL&FS)",
+      "sector": "Infrastructure Finance",
+      "event_date": "2018-10-01",
+      "distress_event": "Government supersedes Board of Directors under Companies Act Section 241/242 after commercial paper defaults.",
+      "pre_event_years": ["FY2016", "FY2017", "FY2018"],
+      "public_sources": ["NCLT Mumbai CP 3638/2018", "MCA Public Order 2018"],
+      "matched_peers": [
+        {"name": "REC Ltd", "status": "Solvent Peer", "ticker": "RECLTD"},
+        {"name": "Power Finance Corporation Ltd (PFC)", "status": "Solvent Peer", "ticker": "PFC"},
+        {"name": "L&T Finance Holdings Ltd", "status": "Solvent Peer", "ticker": "LTF"}
+      ],
+      "financials_available": {
+        "FY2018": {
+          "total_assets": 115800.0,
+          "total_liabilities": 110200.0,
+          "net_worth": 5600.0,
+          "working_capital": -8400.0,
+          "retained_earnings": 1800.0,
+          "ebit": 8400.0,
+          "market_value_equity": 4200.0,
+          "sales": 18700.0,
+          "net_income": 584.0,
+          "cfo": -3800.0,
+          "long_term_debt": 78000.0,
+          "current_assets": 21000.0,
+          "current_liabilities": 29400.0,
+          "shares": 38.2,
+          "gross_margin": 0.35,
+          "is_manufacturing": false
+        }
+      }
+    },
+    {
+      "id": "IND_DISTRESS_10",
+      "company_name": "ABG Shipyard Ltd",
+      "sector": "Shipbuilding & Heavy Marine",
+      "event_date": "2017-08-01",
+      "distress_event": "NCLT Ahmedabad bench admits ICICI Bank petition for CIRP under IBC (RBI 12 Dirty Dozen list).",
+      "pre_event_years": ["FY2014", "FY2015", "FY2016"],
+      "public_sources": ["BSE Scrip 532682", "NCLT Ahmedabad CP(IB) 53/7/NCLT/AHM/2017"],
+      "matched_peers": [
+        {"name": "Cochin Shipyard Ltd", "status": "Solvent Peer", "ticker": "COCHINSHIP"},
+        {"name": "Mazagon Dock Shipbuilders Ltd", "status": "Solvent Peer", "ticker": "MAZDOCK"},
+        {"name": "Garden Reach Shipbuilders & Engineers", "status": "Solvent Peer", "ticker": "GRSE"}
+      ],
+      "financials_available": {
+        "FY2016": {
+          "total_assets": 11200.0,
+          "total_liabilities": 12800.0,
+          "net_worth": -1600.0,
+          "working_capital": -4100.0,
+          "retained_earnings": -2200.0,
+          "ebit": -380.0,
+          "market_value_equity": 180.0,
+          "sales": 480.0,
+          "net_income": -1980.0,
+          "cfo": -120.0,
+          "long_term_debt": 9200.0,
+          "current_assets": 2400.0,
+          "current_liabilities": 6500.0,
+          "shares": 5.1,
+          "gross_margin": 0.05,
+          "is_manufacturing": true
+        }
+      }
+    }
+  ]
+}
+
